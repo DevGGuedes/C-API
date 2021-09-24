@@ -1,0 +1,7 @@
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabri\Desktop\Documentos\IBM\Estudos\C#\C-API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache

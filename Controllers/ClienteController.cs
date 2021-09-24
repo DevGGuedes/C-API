@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using SqlKata.Compilers;
+using SqlKata.Extensions;
+using MySqlConnector;
+using System.Data;
 
 namespace API.Controllers
 {
@@ -21,9 +25,14 @@ namespace API.Controllers
 
         //Mostra Request no swagger
         [HttpGet]
-        public IEnumerable<Cliente> Get()
+        public IEnumerable<Cliente> GetAll()
         {
             var rng = new Random();
+            
+            //var db = new QueryFactory(connection, compiler);
+            //var query = new Query("Users").Where("Id", 1).Where("Status", "Active");
+
+
             return Enumerable.Range(1, 5).Select(index => new Cliente
             {
                 Id = 1,
@@ -33,14 +42,15 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("{id:guid}")]
-        public IEnumerable<Cliente> GetAll()
+        public async Task<Return> GetForId([FromForm] int Id)
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new Cliente
+            return new Return($"Recebido {Id}");
+            /*return Enumerable.Range(1, 5).Select(index => new Cliente
             {
                 Id = 1,
                 Nome = "Gabriel"
-            }).ToArray();
+            }).ToArray();*/
         }
 
         [HttpPost]
